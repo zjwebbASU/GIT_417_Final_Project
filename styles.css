@@ -17,7 +17,7 @@ header{
     color: var(--white);
 }
 
-.header-container, .home-container, #home, #about, #videos, #contact, #game{      /*set max width on all containers*/
+.header-container, .home-container, .videos-container, #home, #about, #videos, #contact, #game{      /*set max width on all containers*/
     width: 984px;
     margin: auto;
 }
@@ -49,7 +49,7 @@ nav a:hover{
 }
 
 header h1{
-    font-size: 56px;;
+    font-size: 50px;;
 }
 
 #home{
@@ -81,6 +81,58 @@ header h1{
 
 .home-img img{
     width: 480px;
-    height: 380px;
+    height: 100%;
     object-fit: contain;
+}
+
+.about-image{
+    display: block;
+    color: var(--dark-gray);
+}
+
+.about-image img{
+    border: 6px solid var(--green);
+    width: 510px;
+    height: auto;
+    display: block;
+}
+
+#about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 600px;
+    gap: 10px;
+}
+
+.about-info{
+    color: var(--dark-gray);
+    width: 37%;
+    margin: auto;
+    height: 100%;
+    text-align: center;
+}
+
+.about-info h1{
+    font-size: 60px;
+    padding-top: 65px;
+    margin: 0;
+}
+
+.about-info p{
+    font-size: 26px;
+    line-height: 34px;
+    margin-top: 10px;
+    text-align: justify;
+}
+
+#videos{
+    height: 790px;
+    width: 100%;
+    background-color: var(--green);
+}
+
+.videos-container h1{
+    text-align: center;
+
 }
