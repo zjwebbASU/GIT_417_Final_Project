@@ -17,7 +17,7 @@ header{
     color: var(--white);
 }
 
-.header-container, .home-container, .videos-container, #home, #about, #videos, #contact, #game{      /*set max width on all containers*/
+.header-container, .home-container, #about, .videos-container, .contact-container{      /*set max width on all containers*/
     width: 984px;
     margin: auto;
 }
@@ -114,7 +114,6 @@ header h1{
 
 .about-info h1{
     font-size: 60px;
-    font-weight: 700;
     padding-top: 65px;
     margin: 0;
 }
@@ -136,7 +135,6 @@ header h1{
     text-align: center;
     padding-top: 65px;
     color: var(--dark-gray);
-    font-weight: 700;
     font-size: 60px;
 }
 
@@ -147,7 +145,7 @@ header h1{
     color: var(--dark-gray);
     background-color: rgba(120, 120, 120, 0.2);
     padding: 30px;
-    box-shadow: 5px 5px 10px var(--gray);
+    box-shadow: 5px 5px 10px rgba(20, 20, 20, 0.5);
     border-radius: 10px;
     margin-bottom: 30px;
 }
@@ -178,6 +176,92 @@ header h1{
 }
 
 #contact {
-    height: 800px;
+    height: 700px;
+    color: var(--dark-gray);
+}
+
+#contact h1{
+    font-size: 60px;
+}
+
+.contact-form   {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    
+}
+
+form{
+    font-size: 41px;
+}
+
+.name {
+    grid-column: 1;
+}
+
+.phone{
+    grid-column: 2;
+}
+
+.email{
+    grid-column: 1;
+}
+
+.preference{
+    grid-column: 2;
+}
+
+.comments{
+    grid-column: 1 / -1;
+}
+
+textarea{
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.prompt {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    height: 50px;
+    font-size: 30px;
+}
+
+textarea{
+    height: 120px;
+}
+
+.radios {
+    display: flex;
+    gap: 20px;
+}
+
+.radios label{
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+}
+
+input[type="radio"]{
+    width: 20px;
+    margin: auto 10px;
+}
+
+input[type="submit"]{
+    margin-top: 10px;
+    height: 90px;
+    border: none;
+    background-color: var(--dark-gray);
+    color: var(--white);
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+#game{
+    height: 700px;
+    background-color: var(--green);
 }
 
