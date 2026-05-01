@@ -39,7 +39,6 @@ nav li {
 }
 
 nav a {
-    text-decoration: none;
     color: var(--white);
     font-weight: 600;
 }
@@ -115,6 +114,7 @@ header h1{
 
 .about-info h1{
     font-size: 60px;
+    font-weight: 700;
     padding-top: 65px;
     margin: 0;
 }
@@ -127,12 +127,57 @@ header h1{
 }
 
 #videos{
-    height: 790px;
     width: 100%;
     background-color: var(--green);
+    padding-bottom: 70px;
 }
 
 .videos-container h1{
     text-align: center;
-
+    padding-top: 65px;
+    color: var(--dark-gray);
+    font-weight: 700;
+    font-size: 60px;
 }
+
+.card{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    color: var(--dark-gray);
+    background-color: rgba(120, 120, 120, 0.2);
+    padding: 30px;
+    box-shadow: 5px 5px 10px var(--gray);
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.card img{
+    width: 300px;
+    border: 6px solid var(--dark-gray);
+    box-shadow: 4px 8px 16px var(--black);
+}
+
+.card a{
+    color: var(--dark-gray);
+}
+
+.card h2{
+    font-size: 31px;
+    margin: 0;
+}
+
+.card p {
+    font-size: 24px;
+}
+
+.video-description{
+    background-color: rgba(120, 120, 120, 0.2);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+#contact {
+    height: 800px;
+}
+
