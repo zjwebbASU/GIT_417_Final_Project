@@ -17,7 +17,7 @@ header{
     color: var(--white);
 }
 
-.header-container, .home-container, #about, .videos-container, .contact-container{      /*set max width on all containers*/
+.header-container, .home-container, #about, .videos-container, .contact-container, .game-container, .footer-container{      /*set max width on all containers*/
     width: 984px;
     margin: auto;
 }
@@ -100,7 +100,6 @@ header h1{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 600px;
     gap: 10px;
 }
 
@@ -228,10 +227,12 @@ textarea{
 input {
     height: 50px;
     font-size: 30px;
+    border: 3px solid var(--dark-gray);
 }
 
 textarea{
     height: 120px;
+    border: 3px solid var(--dark-gray);
 }
 
 .radios {
@@ -252,7 +253,6 @@ input[type="radio"]{
 
 input[type="submit"]{
     margin-top: 10px;
-    height: 90px;
     border: none;
     background-color: var(--dark-gray);
     color: var(--white);
@@ -260,8 +260,62 @@ input[type="submit"]{
     font-weight: 600;
 }
 
-#game{
-    height: 700px;
-    background-color: var(--green);
+.contact-container input[type="submit"]{
+    height: 90px;
 }
 
+#game{
+    background-color: var(--green);
+    color: var(--dark-gray);
+}
+
+.game-container h1{
+    font-size: 60px;
+    padding-top: 40px;
+    margin: 5px 0;
+}
+
+.game-container h1, .game-container p{
+    text-align: center;
+}
+
+.game-container p{
+    font-size:28px;
+    width:510px;
+    margin: 0 auto;
+}
+
+#game-left{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#game-left label, .game-display h2{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.game-display{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding-bottom: 40px;
+}
+
+footer{
+    height: 80px;
+    background-color: var(--dark-gray);
+    color: var(--white);
+}
+
+footer h2{
+    margin: 0;
+    font-size: 30px;
+}
+
+.footer-container{
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
