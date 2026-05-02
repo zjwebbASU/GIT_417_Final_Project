@@ -5,6 +5,7 @@
     <title>NFL Stock Exchange</title>
 
     <link rel="stylesheet" href="styles.css">
+    <script src="index.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,6 +20,7 @@
                     <li><a href="#about">About</a></li>
                     <li><a href="#videos">Videos</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <li><button id="mode-btn">+</button></li>            
                 </ul>
             </nav>
         </div>
@@ -26,7 +28,7 @@
     <main>
         <section id="home">
             <div class="home-container">
-                <h1>WELCOME TO THE NFL STOCK EXCHANGE</h1>
+                <h1>WELCOME TO THE <span>NFL STOCK EXCHANGE</span></h1>
                 <div class="home-img">
                     <a href="https://www.youtube.com/watch?v=XVxko4Qc7Dg" target="_blank">
                         <img src="https://img.youtube.com/vi/XVxko4Qc7Dg/maxresdefault.jpg" alt="Thumbnail of NFL Stock Exchange 2024 Draft Grades">
@@ -84,7 +86,7 @@
                 <form action="" class="contact-form">
                     <div class="name prompt">
                         <label for="name">Full Name</label>
-                        <input type="text" id="name">
+                        <input type="text" id="name" required>
                     </div>
                     <div class="phone prompt">
                         <label for="phone">Phone Number</label>
@@ -103,7 +105,7 @@
                     </div>
                     <div class="comments prompt">
                         <label for="comments">Comments</label>
-                        <textarea name="comments" id="comments"></textarea>
+                        <textarea name="comments" id="comments" required></textarea>
                     </div>
                     <input type="submit"></input>
                 </form>
@@ -111,7 +113,7 @@
         </section>
         <section id="game">
             <div class="game-container">
-                <h1>WIN FREE MERCH</h1>
+                <h1>WIN <span>FREE</span> MERCH</h1>
                 <p>Guess the number from 1 to 10 correctly for a free sticker with your order!</p>
                 <div class="game-display">
                     <form action="" method="post" id="game-left">
