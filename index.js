@@ -36,7 +36,7 @@ phoneRadio.addEventListener("change", formRequirements);
 emailRadio.addEventListener("change", formRequirements);
 formRequirements();
 
-function validateForm(e){
+function validateForm(e){ /*This function ensures the user inputs the required fields with valid data*/
 
     e.preventDefault();
 
@@ -100,7 +100,7 @@ function validateForm(e){
 
 submitBtn.addEventListener("click", validateForm);
 
-game.addEventListener("submit", function(e){
+game.addEventListener("submit", function(e){ /*This function takes a number 1 to 10 from a user and compares it to a random number 1 to 10*/
     e.preventDefault();
 
     const userGuess = Number(guessInput.value);
