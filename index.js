@@ -9,6 +9,12 @@ const phoneInput = document.getElementById("phone");
 const emailInput = document.getElementById("email");
 const submitBtn = document.getElementById("submit-btn");
 
+const game = document.getElementById("game-left");
+const gameTitle = document.getElementById("game-title");
+const gameGuess = document.getElementById("game-guess");
+const gameResults = document.getElementById("game-results");
+const guessInput = document.getElementById("guess");
+
 modeBtn.addEventListener("click", function(){ /*this function toggles light and dark mode*/
     document.body.classList.toggle("dark-mode");
 });
@@ -93,3 +99,20 @@ function validateForm(e){
 }
 
 submitBtn.addEventListener("click", validateForm);
+
+game.addEventListener("submit", function(e){
+    e.preventDefault();
+
+    const userGuess = Number(guessInput.value);
+    const winningNumber = Math.floor(Math.random() * 10) +1;
+
+    if(userGuess === winningNumber){
+        gameTitle.textContent = "You Won!";
+        gameGuess.textContent = `Your Guess: ${userGuess}`;
+        gameResults.textContent = `Winning Number: ${winningNumber}`;
+    }else{
+        gameTitle.textContent = "Try Again!";
+        gameGuess.textContent = `Your Guess: ${userGuess}`;
+        gameResults.textContent = `Winning Number: ${winningNumber}`;
+    }
+})

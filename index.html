@@ -28,7 +28,7 @@
     <main>
         <section id="home">
             <div class="home-container">
-                <h1>WELCOME TO THE <span>NFL STOCK EXCHANGE</span></h1>
+                <h2>WELCOME TO THE <span>NFL STOCK EXCHANGE</span></h2>
                 <div class="home-img">
                     <a href="https://www.youtube.com/watch?v=XVxko4Qc7Dg" target="_blank">
                         <img src="https://img.youtube.com/vi/XVxko4Qc7Dg/maxresdefault.jpg" alt="Thumbnail of NFL Stock Exchange 2024 Draft Grades">
@@ -43,13 +43,13 @@
                 <p>Podcast hosts Trevor Sikkema (left) and Connor Rogers (right).</p>
             </div>
             <div class="about-info">
-                <h1>ABOUT US</h1>
+                <h2>ABOUT US</h2>
                 <p>Hosts Trevor Sikkema and Connor Rogers bring you the best NFL Draft Analysis on the market. Follow the duo all the way through draft season with the combine, the draft, and the NFL season as they look at mock drafts, scouting reports and more to identify the next NFL superstars. If you love the NFL Draft, look no further.</p>
             </div>
         </section>
         <section id="videos">
             <div class="videos-container">
-                <h1>OUR VIDEOS</h1>
+                <h2>OUR VIDEOS</h2>
                 <div class="card">
                     <a href="https://www.youtube.com/watch?v=jKxoKftYOFY" target="_blank">
                         <img src="https://img.youtube.com/vi/jKxoKftYOFY/maxresdefault.jpg" alt="2026 Draft Grades thumbnail">
@@ -81,9 +81,9 @@
         </section>
         <section id="contact">
             <div class="contact-container">
-                <h1>CONTACT US</h1>
+                <h2>CONTACT US</h2>
 
-                <form action="" class="contact-form">
+                <form class="contact-form">
                     <div class="name prompt">
                         <label for="name">Full Name</label>
                         <input type="text" id="name" required>
@@ -97,7 +97,7 @@
                         <input type="email" id="email">
                     </div>
                     <div class="preference prompt">
-                        <label for="preference">Contact Preference</label>
+                        <label>Contact Preference</label>
                         <div class="radios">
                             <label for="phone-pref"><input type="radio" name="pref" id="phone-pref" required>Phone</label>
                             <label for="email-pref"><input type="radio" name="pref" id="email-pref">Email</label>
@@ -107,29 +107,28 @@
                         <label for="comments">Comments</label>
                         <textarea name="comments" id="comments" required></textarea>
                     </div>
-                    <input type="submit" id="submit-btn"></input>
+                    <input type="submit" id="submit-btn">
                     <p id="outputP"></p>
                 </form>
             </div>
         </section>
         <section id="game">
             <div class="game-container">
-                <h1>WIN <span>FREE</span> MERCH</h1>
+                <h2>WIN <span>FREE</span> MERCH</h2>
                 <p>Guess the number from 1 to 10 correctly for a free sticker with your order!</p>
                 <div class="game-display">
-                    <form action="" method="post" id="game-left">
+                    <form method="post" id="game-left">
                         <label for="guess">Enter a number between 1 and 10:</label>
                         <input type="number" id="guess" name="guess" min="1" max="10" required>
-                        <input type="submit" value="guess"></input>
+                        <input type="submit" value="guess">
                     </form>
                     <div class="game-right">
-                        <h2>Play Now!</h2>
-                        <h2>Enter a number between 1 and 10 in the box on the left</h2>
-                        <h2>We will generate a random number. If your number matches, you win!</h2>
+                        <h2 id="game-title">Play Now!</h2>
+                        <h2 id="game-guess">Enter a number between 1 and 10 in the box on the left</h2>
+                        <h2 id="game-results">We will generate a random number. If your number matches, you win!</h2>
                     </div>
                 </div>
             </div>
-
         </section>
 
     </main>
