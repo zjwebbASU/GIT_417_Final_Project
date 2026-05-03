@@ -194,7 +194,7 @@ header h1{
 }
 
 #contact {
-    height: 700px;
+    min-height: 700px;
     color: var(--black);
 }
 
@@ -350,4 +350,12 @@ footer h2{
 
 #mode-btn:hover{
     cursor: pointer;
+}
+
+.error{
+    color: rgb(194, 56, 56);
+}
+
+#outputP{
+    margin-top: 10px;
 }

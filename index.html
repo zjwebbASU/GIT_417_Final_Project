@@ -99,7 +99,7 @@
                     <div class="preference prompt">
                         <label for="preference">Contact Preference</label>
                         <div class="radios">
-                            <label for="phone-pref"><input type="radio" name="pref" id="phone-pref">Phone</label>
+                            <label for="phone-pref"><input type="radio" name="pref" id="phone-pref" required>Phone</label>
                             <label for="email-pref"><input type="radio" name="pref" id="email-pref">Email</label>
                         </div>
                     </div>
@@ -107,7 +107,8 @@
                         <label for="comments">Comments</label>
                         <textarea name="comments" id="comments" required></textarea>
                     </div>
-                    <input type="submit"></input>
+                    <input type="submit" id="submit-btn"></input>
+                    <p id="outputP"></p>
                 </form>
             </div>
         </section>
