@@ -6,6 +6,7 @@
     --dark-gray: #222222;
     --black: #141414;
     --span: #141414;
+    --footer: #222222;
 }
 
 .dark-mode{
@@ -15,6 +16,7 @@
     --dark-gray: #43FD58;
     --black: #FFFFFF;
     --span: #43FD58;
+    --footer: #141414;
 }
 
 body{
@@ -271,8 +273,8 @@ input[type="radio"]{
 input[type="submit"]{
     margin-top: 10px;
     border: none;
-    background-color: #222222;
-    color: var(--white);
+    background-color: var(--span);
+    color: var(--off-white);
     border-radius: 10px;
     font-weight: 600;
 }
@@ -322,7 +324,7 @@ input[type="submit"]{
 
 footer{
     height: 80px;
-    background-color: #222222;
+    background-color: var(--footer);
     color: var(--white);
 }
 
